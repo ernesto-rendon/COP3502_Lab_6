@@ -1,0 +1,6 @@
+def two_sum(a,b):
+  try:
+    return (a+b)
+  except ValueError:
+    print('Usage: Please provide only numerical chars.')
+    return None
