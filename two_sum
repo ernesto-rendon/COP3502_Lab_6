@@ -1,6 +1,15 @@
-def two_sum(a,b):
+# First num, second num, and function mode ('add' by default)
+def two_sum(a,b,m='a'):
   try:
-    return (a+b)
-  except ValueError:
+    # If mode argument is 'a' (or missing entirely in call), return the sum of the numbers
+    if m == 'a':
+      return (a+b)
+
+    # If mode variable is anything else other than 'a', return the difference of the two numbers
+    else:
+      return (a-b)
+  
+  # If non-numerical chars in arguments, throw error and return none
+  except:
     print('Usage: Please provide only numerical chars.')
     return None
